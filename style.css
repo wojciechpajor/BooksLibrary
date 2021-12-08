@@ -1,0 +1,12 @@
+.error {
+    background-color: #ffe3e3 !important;
+}
+
+.success {
+    background-color: #dfffdf !important;
+}
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+}

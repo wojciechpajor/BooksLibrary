@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Task 2</title>
+</head>
+<body>
+<div id="container" class="container bg-light" style="min-height: 100vh">
+    <h1 class="text-center">Add new book</h1>
+    <form id="myForm" onsubmit="handleSubmit()" class="col-lg-6 col-12 bg-white mx-auto px-1">
+        <div class="form-group m-2">
+            <label for="title">Title</label>
+            <input id="title" type="text" class="form-control" placeholder="Enter title">
+            <small id="titleMsg" class="ml-1 text-danger d-none"></small>
+        </div>
+        <div class="form-group m-2">
+            <label for="author">Author</label>
+            <input id="author" type="text" class="form-control" placeholder="Enter author">
+            <small id="authorMsg" class="ml-1 text-danger d-none"></small>
+        </div>
+        <div class="form-group m-2">
+            <label for="priority">Read priority</label>
+            <input id="priority" min="1" max="5" type="number" class="form-control"
+                   placeholder="Enter your read priority (1-5)">
+            <small id="priorityMsg" class="ml-1 text-danger d-none"></small>
+        </div>
+        <div class="form-group m-2">
+            <label for="category">Category</label>
+            <select id="category" class="form-control" aria-label="Select category">
+                <option disabled selected>Select category</option>
+                <option>Comedy</option>
+                <option>Drama</option>
+                <option>Tragedy</option>
+            </select>
+            <small id="categoryMsg" class="ml-1 text-danger d-none"></small>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-success m-2">Add book</button>
+        </div>
+    </form>
+    <section class="pt-5">
+        <h1 class="text-center">Library </h1>
+        <div id="books" class="mt-1">
+        </div>
+    </section>
+
+</div>
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
